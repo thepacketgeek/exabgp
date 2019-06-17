@@ -3,7 +3,9 @@ Version explained:
  minor : increase on risk of code breakage during a major release
  bug   : increase on bug or incremental changes
 
-Version 4.0.11
+Version 4.1.1
+
+Version 4.1.0
  * CHANGE: when redifining a single parameter option using inheritence the value will be replaced
  * CHANGE: FlowSpec TRUE and FALSE value have been updated to use the latest RFC and are therefore inverted from previous versions
  * CHANGE: an invalid netmask for a network will now cause ExaBGP to fail the parsing of the route (it can stop ExaBGP from starting with bad routes)
@@ -25,6 +27,10 @@ Version 4.0.11
    patch: Zac Medico
  * Fix: MD5 encoding
    reported by: Adam Jacob Muller (with an initial idea for a patch)
+ * Fix: ignore unknown BGP-LS SID
+   reported by: MosesN
+ * Fix: badly deciding when to send or not AddPath from parsing the Capability
+   reported by: ivan-balan
 
 Version 4.0.10
  * Feature: Add decoding for Mac Mobility
